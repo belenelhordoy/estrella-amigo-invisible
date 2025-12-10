@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>La Estrella</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #0b0b15;
+
+        background-image: url("fondo.jpg");
+        background-size: cover;        /* Ocupa toda la pantalla */
+        background-position: center;   /* Centrada */
+        background-repeat: no-repeat;  /* Sin repetición */
+        background-attachment: fixed;  /* Efecto suave tipo parallax */
+
+        color: #e8d8a6;
+        font-family: "Cinzel", serif;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    /* Fondo más oscuro debajo del texto para mantener legibilidad */
+    .overlay {
+        background: rgba(0, 0, 0, 0.55);
+        padding: 40px 20px 80px 20px;
+        border-radius: 10px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 20px;
+        line-height: 1.4;
+        text-shadow: 0 0 4px rgba(0,0,0,0.6);
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        opacity: 0.95;
+        line-height: 1.5;
+        text-shadow: 0 0 4px rgba(0,0,0,0.6);
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin: 20px auto;
+        max-width: 450px;
+        text-shadow: 0 0 4px rgba(0,0,0,0.5);
+    }
+
+    .note {
+        font-size: 0.9rem;
+        opacity: 0.9;
+        margin-top: 35px;
+        font-style: italic;
+        text-shadow: 0 0 4px rgba(0,0,0,0.6);
+    }
+
+    audio {
+        margin-top: 20px;
+        width: 100%;
+        max-width: 300px;
+        opacity: 0.30;
+    }
+</style>
+
+</head>
+<body>
+
+<!-- Overlay para que el texto se vea bien sobre el fondo -->
+<div class="overlay">
+
+<h1>Hay historias que comienzan con una señal.<br>
+Si querés seguir esta, subí el volumen.</h1>
+
+<audio autoplay controls>
+    <source src="campanas.mp3" type="audio/mpeg">
+    Tu navegador no soporta la reproducción automática.
+</audio>
+
+<h2>Dicen que hubo una noche en la que la luz señaló un lugar<br>
+mucho antes de que lo hiciera cualquier mapa.</h2>
+
+<p>
+<strong>»Pero tú, _____ Efrata,<br>
+entre los pueblos de Judá<br>
+eres un pueblo pequeño,<br>
+pero llegarás a ser muy importante.<br>
+En ti nacerá un rey<br>
+de familia muy antigua,<br>
+que gobernará sobre Judá.</strong><br>
+— Miqueas 5:2
+</p>
+
+<p class="note">(Si encontraste el lugar… encontraste también la respuesta.)</p>
+
+</div>
+
+</body>
+</html>
+
